@@ -8,6 +8,13 @@
 
 #import "KFXSesameView.h"
 
+NSString *const kKFXSesameViewCellRowIndexKEY = @"rowIndex";
+NSString *const kKFXSesameViewCellColumnIndexKEY = @"columnIndex";
+NSString *const kKFXSesameViewCellTapsRequiredKEY = @"tapsRequired";
+NSString *const kKFXSesameViewCellSequencePositionKEY = @"sequencePosition";
+NSString *const kKFXSesameViewCellIdentifierKEY = @"identifier";
+
+
 typedef NS_ENUM(NSInteger, KFXSesameViewErrorCode){
     KFXSesameViewErrorCodeUndefined = 0,
     KFXSesameViewErrorCodeRowIndexGreaterNumberOfRows,

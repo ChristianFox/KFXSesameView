@@ -10,11 +10,11 @@
 
 
 NS_ASSUME_NONNULL_BEGIN
-NSString *const kKFXSesameViewCellRowIndexKEY = @"rowIndex";
-NSString *const kKFXSesameViewCellColumnIndexKEY = @"columnIndex";
-NSString *const kKFXSesameViewCellTapsRequiredKEY = @"tapsRequired";
-NSString *const kKFXSesameViewCellSequencePositionKEY = @"sequencePosition";
-NSString *const kKFXSesameViewCellIdentifierKEY = @"identifier";
+extern NSString *const kKFXSesameViewCellRowIndexKEY;
+extern NSString *const kKFXSesameViewCellColumnIndexKEY;
+extern NSString *const kKFXSesameViewCellTapsRequiredKEY;
+extern NSString *const kKFXSesameViewCellSequencePositionKEY;
+extern NSString *const kKFXSesameViewCellIdentifierKEY;
 
 
 @class KFXSesameView;
