@@ -435,7 +435,7 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
     
     [self.locks removeAllObjects];
     
-    for (NSString *cellKey in self.cells) {
+    for (NSUInteger idx = 0; idx < self.cells.count; idx++) {
         [self.locks addObject:@YES];
     }
 }

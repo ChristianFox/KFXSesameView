@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
+NS_ASSUME_NONNULL_BEGIN
 NSString *const kKFXSesameViewCellRowIndexKEY = @"rowIndex";
 NSString *const kKFXSesameViewCellColumnIndexKEY = @"columnIndex";
 NSString *const kKFXSesameViewCellTapsRequiredKEY = @"tapsRequired";
@@ -15,7 +17,6 @@ NSString *const kKFXSesameViewCellSequencePositionKEY = @"sequencePosition";
 NSString *const kKFXSesameViewCellIdentifierKEY = @"identifier";
 
 
-NS_ASSUME_NONNULL_BEGIN
 @class KFXSesameView;
 @protocol KFXSesameViewDelegate <NSObject>
 
@@ -29,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KFXSesameView : UIView
 
-@property (weak, nonatomic) id<KFXSesameViewDelegate> delegate;
+@property (weak, nonatomic, nullable) id<KFXSesameViewDelegate> delegate;
 // Configurable Properties
 @property (nonatomic) NSUInteger numberOfRows;
 @property (nonatomic) NSUInteger numberOfColumns;
@@ -51,10 +52,10 @@ NS_ASSUME_NONNULL_BEGIN
  *
  **/
 -(BOOL)configureCellAtColumn:(NSUInteger)columnIdx
-                   row:(NSUInteger)rowIdx
-             tapsRequired:(NSUInteger)tapsRequired
+                         row:(NSUInteger)rowIdx
+                tapsRequired:(NSUInteger)tapsRequired
                   identifier:(NSString*_Nullable)identifier
-                    error:(NSError**)error;
+                       error:(NSError*_Nullable*)error;
 
 
 
