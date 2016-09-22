@@ -157,7 +157,12 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SesameCell" forIndexPath:indexPath];
     
-    cell.backgroundColor = [self randomColourWithRandomAlpha:NO alpha:1.0];
+    if (self.showCells) {
+        cell.backgroundColor = [self randomColourWithRandomAlpha:NO alpha:1.0];
+    }else{
+        cell.backgroundColor = [UIColor clearColor];
+    }
+    
 
     NSString *cellKey = [self cellKeyWithColumnIndex:indexPath.section rowIndex:indexPath.row];
     NSDictionary *cellDict = self.cells[cellKey];
@@ -253,6 +258,8 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
     self.showCells = NO;
     self.lockCellsAfterSequenceCompletion = YES;
     [self configureCollectonView];
+    self.backgroundColor = [UIColor clearColor];
+
 }
 
 //--------------------------------------------------------
@@ -265,7 +272,7 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
     self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
-    self.collectionView.backgroundColor = [UIColor greenColor];
+    self.collectionView.backgroundColor = [UIColor clearColor];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"SesameCell"];
     [self.collectionView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self addSubview:self.collectionView];
