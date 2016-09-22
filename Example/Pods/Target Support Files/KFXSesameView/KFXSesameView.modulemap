@@ -1,0 +1,6 @@
+framework module KFXSesameView {
+  umbrella header "KFXSesameView-umbrella.h"
+
+  export *
+  module * { export * }
+}

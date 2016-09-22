@@ -1,0 +1,22 @@
+{
+  "name": "KFXSesameView",
+  "version": "0.1.0",
+  "summary": "KFXSesameView - hidden keypad for unlocking hidden doors.",
+  "description": "UIView subclass. configure with number of cells and number of taps required on each cell.",
+  "homepage": "https://kfxtech@bitbucket.org/kfxteam/kfxsesameview.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Christian Fox": "christianfox890@icloud.com"
+  },
+  "source": {
+    "git": "https://kfxtech@bitbucket.org/kfxteam/kfxsesameview.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KFXSesameView/Classes/**/*"
+}

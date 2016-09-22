@@ -15,7 +15,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* KFXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* KFXAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* KFXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* KFXViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		DB4365FD1D93D1C100F4DA6E /* KFXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4365FC1D93D1C100F4DA6E /* KFXViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,6 @@
 		6003F59B195388D20070C39A /* KFXSesameView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KFXSesameView-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* KFXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFXAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* KFXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFXAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* KFXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFXViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* KFXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFXViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* KFXSesameView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFXSesameView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,6 +62,8 @@
 		A03ECFFADEC2793DE809C6E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BBF3D6EC88E6177E2DC2410F /* Pods_KFXSesameView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXSesameView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D535EA43F6B536970759C79E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DB4365FB1D93D1C100F4DA6E /* KFXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFXViewController.h; sourceTree = "<group>"; };
+		DB4365FC1D93D1C100F4DA6E /* KFXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFXViewController.m; sourceTree = "<group>"; };
 		FC37060E709E7C388E42527C /* KFXSesameView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KFXSesameView.podspec; path = ../KFXSesameView.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,9 +143,9 @@
 			children = (
 				6003F59C195388D20070C39A /* KFXAppDelegate.h */,
 				6003F59D195388D20070C39A /* KFXAppDelegate.m */,
+				DB4365FB1D93D1C100F4DA6E /* KFXViewController.h */,
+				DB4365FC1D93D1C100F4DA6E /* KFXViewController.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* KFXViewController.h */,
-				6003F5A6195388D20070C39A /* KFXViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -390,8 +390,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4365FD1D93D1C100F4DA6E /* KFXViewController.m in Sources */,
 				6003F59E195388D20070C39A /* KFXAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* KFXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +516,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KFXSesameView/KFXSesameView-Prefix.pch";
 				INFOPLIST_FILE = "KFXSesameView/KFXSesameView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +533,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KFXSesameView/KFXSesameView-Prefix.pch";
 				INFOPLIST_FILE = "KFXSesameView/KFXSesameView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

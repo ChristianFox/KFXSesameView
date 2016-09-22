@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06EF442DA4710C60F8A8E4AD26F55AE7 /* KFXSesameView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE765A08C79E4319C41C9A59AF90633 /* KFXSesameView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1151D7B48C948A70250EF6829B6125B0 /* Pods-KFXSesameView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42995444E4172DED947163A3932F41DB /* Pods-KFXSesameView_Example-dummy.m */; };
+		5EEF35892FA9E39DD42A841F671511DA /* Pods-KFXSesameView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2011E348E1FE45BD13C290054509E65B /* Pods-KFXSesameView_Tests-dummy.m */; };
+		81CE52F6947CD9083D9B4487FE9A5106 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A01B685E5C54389E7E94111A0677D0F3 /* Pods-KFXSesameView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5608D9912F1D138553B1EA22324BF9E5 /* Pods-KFXSesameView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA89C1C4183A5CB71B4B90E8A2E2E54A /* KFXSesameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E10EA9BBC3258F374D182AFCFF2440D /* KFXSesameView.m */; };
+		BD769DB7A2E9A227F2388E947B2D05D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		CAE3AD57FC2AC9625AB33C9E4ACB7D4A /* Pods-KFXSesameView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05B7D93B48E3322961FBF68DA9DFDE2F /* Pods-KFXSesameView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4025A4E43BCD0A0487FD62DF9CB77B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D688A9DD6C24B462474CC92FAF1C0AD8 /* KFXSesameView.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE938D2A5A7EFC76464FDC9387B6E7 /* KFXSesameView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D833B9D57F1ECC9DE749E1FA9E51E9FE /* KFXSesameView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C3FF4ED48B9DC5160E009248D80F9 /* KFXSesameView-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78AB2FAE51022D56245A306AE18426E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F972C1F62BF2D0026E8996CDBE3E32F;
+			remoteInfo = KFXSesameView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05B7D93B48E3322961FBF68DA9DFDE2F /* Pods-KFXSesameView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KFXSesameView_Example-umbrella.h"; sourceTree = "<group>"; };
+		1EA51E5009C922A440FC6A01E05582CF /* Pods-KFXSesameView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KFXSesameView_Tests.modulemap"; sourceTree = "<group>"; };
+		2011E348E1FE45BD13C290054509E65B /* Pods-KFXSesameView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KFXSesameView_Tests-dummy.m"; sourceTree = "<group>"; };
+		2CAC9475CE1FF54E0B8C8BCCBE8646DE /* Pods-KFXSesameView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KFXSesameView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E10EA9BBC3258F374D182AFCFF2440D /* KFXSesameView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KFXSesameView.m; sourceTree = "<group>"; };
+		2EF1CAB16C94E250CC93DA46AAF0FACC /* Pods-KFXSesameView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXSesameView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3810C2DA9D1745103CBCE7DF7A1BF30E /* Pods-KFXSesameView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KFXSesameView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3D5C599F3D16301ECCFD7D3D7AD7B812 /* KFXSesameView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KFXSesameView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B4095B8F6E9D399D9184485E146864 /* Pods_KFXSesameView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXSesameView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42995444E4172DED947163A3932F41DB /* Pods-KFXSesameView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KFXSesameView_Example-dummy.m"; sourceTree = "<group>"; };
+		4653F0BB6BA300F2B70310F1B9973785 /* KFXSesameView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KFXSesameView.modulemap; sourceTree = "<group>"; };
+		5608D9912F1D138553B1EA22324BF9E5 /* Pods-KFXSesameView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KFXSesameView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		605C3FF4ED48B9DC5160E009248D80F9 /* KFXSesameView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KFXSesameView-dummy.m"; sourceTree = "<group>"; };
+		611BE329912B4EFD538D770011482887 /* Pods-KFXSesameView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KFXSesameView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6FB576AAE67972B30533A110297CE1B0 /* Pods-KFXSesameView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KFXSesameView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		76A910723A23839C6AC817ABC87A527F /* Pods-KFXSesameView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXSesameView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7759269F3A1C5BF85ADB07F73A86C4F9 /* KFXSesameView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KFXSesameView-prefix.pch"; sourceTree = "<group>"; };
+		7FF52328D8160284E624ACBD1278C503 /* Pods_KFXSesameView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXSesameView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FE938D2A5A7EFC76464FDC9387B6E7 /* KFXSesameView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KFXSesameView.h; sourceTree = "<group>"; };
+		8FB27A3F29BF4E6360347B8F35DC7681 /* Pods-KFXSesameView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXSesameView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9740256F3A0F8E0E7185CEC4A67C3110 /* Pods-KFXSesameView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXSesameView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9C39B3669CD9B89B68F771AC9298FA3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2BBDA21B9821E12C78508A76E3178DE /* Pods-KFXSesameView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXSesameView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A8819766C2D14AB01F491BDACA806531 /* KFXSesameView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KFXSesameView.xcconfig; sourceTree = "<group>"; };
+		A9DD785BF6FC19B0FB196CCF4E4A0D9B /* Pods-KFXSesameView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KFXSesameView_Example.modulemap"; sourceTree = "<group>"; };
+		B6EE75F9BCDD5D621603D5626827FDA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE765A08C79E4319C41C9A59AF90633 /* KFXSesameView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KFXSesameView-umbrella.h"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E63C04D03B23E515F1F97B85E4939379 /* Pods-KFXSesameView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXSesameView_Example-resources.sh"; sourceTree = "<group>"; };
+		ED2D32B713E178194CC4777875044888 /* Pods-KFXSesameView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXSesameView_Tests-resources.sh"; sourceTree = "<group>"; };
+		F8677EA4F17D17D404B399D461DB9EC6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7C8B2ECE51B7069ECC25D971A46FB1 /* Pods-KFXSesameView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXSesameView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E8DE1B6D9D793E8F1F944AE9BC3B53E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81CE52F6947CD9083D9B4487FE9A5106 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5190F4C31F74E40F2E6BD3288A003929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4025A4E43BCD0A0487FD62DF9CB77B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881A052832B3D3D480912D646975FF7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD769DB7A2E9A227F2388E947B2D05D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A07E64C5AD2F38432B8E664F662AC3 /* Pods-KFXSesameView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9C39B3669CD9B89B68F771AC9298FA3C /* Info.plist */,
+				1EA51E5009C922A440FC6A01E05582CF /* Pods-KFXSesameView_Tests.modulemap */,
+				6FB576AAE67972B30533A110297CE1B0 /* Pods-KFXSesameView_Tests-acknowledgements.markdown */,
+				2CAC9475CE1FF54E0B8C8BCCBE8646DE /* Pods-KFXSesameView_Tests-acknowledgements.plist */,
+				2011E348E1FE45BD13C290054509E65B /* Pods-KFXSesameView_Tests-dummy.m */,
+				9740256F3A0F8E0E7185CEC4A67C3110 /* Pods-KFXSesameView_Tests-frameworks.sh */,
+				ED2D32B713E178194CC4777875044888 /* Pods-KFXSesameView_Tests-resources.sh */,
+				5608D9912F1D138553B1EA22324BF9E5 /* Pods-KFXSesameView_Tests-umbrella.h */,
+				FA7C8B2ECE51B7069ECC25D971A46FB1 /* Pods-KFXSesameView_Tests.debug.xcconfig */,
+				A2BBDA21B9821E12C78508A76E3178DE /* Pods-KFXSesameView_Tests.release.xcconfig */,
+			);
+			name = "Pods-KFXSesameView_Tests";
+			path = "Target Support Files/Pods-KFXSesameView_Tests";
+			sourceTree = "<group>";
+		};
+		27D1D504531CED22C22D5C511E5E8659 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E5497A3870D39D2074419597E087F08 /* KFXSesameView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		451DBF2B9608A916D88368BC62D70727 /* Pods-KFXSesameView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE75F9BCDD5D621603D5626827FDA2 /* Info.plist */,
+				A9DD785BF6FC19B0FB196CCF4E4A0D9B /* Pods-KFXSesameView_Example.modulemap */,
+				611BE329912B4EFD538D770011482887 /* Pods-KFXSesameView_Example-acknowledgements.markdown */,
+				3810C2DA9D1745103CBCE7DF7A1BF30E /* Pods-KFXSesameView_Example-acknowledgements.plist */,
+				42995444E4172DED947163A3932F41DB /* Pods-KFXSesameView_Example-dummy.m */,
+				2EF1CAB16C94E250CC93DA46AAF0FACC /* Pods-KFXSesameView_Example-frameworks.sh */,
+				E63C04D03B23E515F1F97B85E4939379 /* Pods-KFXSesameView_Example-resources.sh */,
+				05B7D93B48E3322961FBF68DA9DFDE2F /* Pods-KFXSesameView_Example-umbrella.h */,
+				76A910723A23839C6AC817ABC87A527F /* Pods-KFXSesameView_Example.debug.xcconfig */,
+				8FB27A3F29BF4E6360347B8F35DC7681 /* Pods-KFXSesameView_Example.release.xcconfig */,
+			);
+			name = "Pods-KFXSesameView_Example";
+			path = "Target Support Files/Pods-KFXSesameView_Example";
+			sourceTree = "<group>";
+		};
+		484D34A1FFD16FED918B36007083E3C6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84FE938D2A5A7EFC76464FDC9387B6E7 /* KFXSesameView.h */,
+				2E10EA9BBC3258F374D182AFCFF2440D /* KFXSesameView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				27D1D504531CED22C22D5C511E5E8659 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FB68FCF03A8135FEA0143881DADBB19C /* Products */,
+				DF60C7EAA53A773A505ECDE04B6EB8D3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8E5497A3870D39D2074419597E087F08 /* KFXSesameView */ = {
+			isa = PBXGroup;
+			children = (
+				9CE37F66A8EC0E24455D7AE36001E1BC /* KFXSesameView */,
+				A184B07C898D0BBA0639BA1FEB064F4C /* Support Files */,
+			);
+			name = KFXSesameView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9CE37F66A8EC0E24455D7AE36001E1BC /* KFXSesameView */ = {
+			isa = PBXGroup;
+			children = (
+				484D34A1FFD16FED918B36007083E3C6 /* Classes */,
+			);
+			path = KFXSesameView;
+			sourceTree = "<group>";
+		};
+		A184B07C898D0BBA0639BA1FEB064F4C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8677EA4F17D17D404B399D461DB9EC6 /* Info.plist */,
+				4653F0BB6BA300F2B70310F1B9973785 /* KFXSesameView.modulemap */,
+				A8819766C2D14AB01F491BDACA806531 /* KFXSesameView.xcconfig */,
+				605C3FF4ED48B9DC5160E009248D80F9 /* KFXSesameView-dummy.m */,
+				7759269F3A1C5BF85ADB07F73A86C4F9 /* KFXSesameView-prefix.pch */,
+				CAE765A08C79E4319C41C9A59AF90633 /* KFXSesameView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KFXSesameView";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF60C7EAA53A773A505ECDE04B6EB8D3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				451DBF2B9608A916D88368BC62D70727 /* Pods-KFXSesameView_Example */,
+				18A07E64C5AD2F38432B8E664F662AC3 /* Pods-KFXSesameView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FB68FCF03A8135FEA0143881DADBB19C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D5C599F3D16301ECCFD7D3D7AD7B812 /* KFXSesameView.framework */,
+				41B4095B8F6E9D399D9184485E146864 /* Pods_KFXSesameView_Example.framework */,
+				7FF52328D8160284E624ACBD1278C503 /* Pods_KFXSesameView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		410065D051704970090FFFAB4DF23559 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE3AD57FC2AC9625AB33C9E4ACB7D4A /* Pods-KFXSesameView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B282C83231ABF12E7D8DACB822CF7C19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EF442DA4710C60F8A8E4AD26F55AE7 /* KFXSesameView-umbrella.h in Headers */,
+				D688A9DD6C24B462474CC92FAF1C0AD8 /* KFXSesameView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB0B6647904A7EB832B12BF03F5C7AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01B685E5C54389E7E94111A0677D0F3 /* Pods-KFXSesameView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1BA055CDC32C40A979E99DE98826A16F /* Pods-KFXSesameView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C97BBD338B6017917E92A02CC4368EA /* Build configuration list for PBXNativeTarget "Pods-KFXSesameView_Tests" */;
+			buildPhases = (
+				F4010DA5AC0559F3F9F16735F49E432D /* Sources */,
+				5190F4C31F74E40F2E6BD3288A003929 /* Frameworks */,
+				DAB0B6647904A7EB832B12BF03F5C7AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KFXSesameView_Tests";
+			productName = "Pods-KFXSesameView_Tests";
+			productReference = 7FF52328D8160284E624ACBD1278C503 /* Pods_KFXSesameView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		584B8E60830AB3DFA7DF4002BF603620 /* Pods-KFXSesameView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 644196C0E52E724B2189D8AF00B4B35F /* Build configuration list for PBXNativeTarget "Pods-KFXSesameView_Example" */;
+			buildPhases = (
+				2E89AA62B64728436BBB2016BF14F854 /* Sources */,
+				881A052832B3D3D480912D646975FF7F /* Frameworks */,
+				410065D051704970090FFFAB4DF23559 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F35FC9CD531CC4281F008216F92AC823 /* PBXTargetDependency */,
+			);
+			name = "Pods-KFXSesameView_Example";
+			productName = "Pods-KFXSesameView_Example";
+			productReference = 41B4095B8F6E9D399D9184485E146864 /* Pods_KFXSesameView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7F972C1F62BF2D0026E8996CDBE3E32F /* KFXSesameView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E9723D8F8008DF8B9AB2D1CE4B41FDA /* Build configuration list for PBXNativeTarget "KFXSesameView" */;
+			buildPhases = (
+				A9A6C88C670EF04B8AA4EC2DDB2E1AA7 /* Sources */,
+				1E8DE1B6D9D793E8F1F944AE9BC3B53E /* Frameworks */,
+				B282C83231ABF12E7D8DACB822CF7C19 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KFXSesameView;
+			productName = KFXSesameView;
+			productReference = 3D5C599F3D16301ECCFD7D3D7AD7B812 /* KFXSesameView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FB68FCF03A8135FEA0143881DADBB19C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F972C1F62BF2D0026E8996CDBE3E32F /* KFXSesameView */,
+				584B8E60830AB3DFA7DF4002BF603620 /* Pods-KFXSesameView_Example */,
+				1BA055CDC32C40A979E99DE98826A16F /* Pods-KFXSesameView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E89AA62B64728436BBB2016BF14F854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1151D7B48C948A70250EF6829B6125B0 /* Pods-KFXSesameView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A6C88C670EF04B8AA4EC2DDB2E1AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D833B9D57F1ECC9DE749E1FA9E51E9FE /* KFXSesameView-dummy.m in Sources */,
+				AA89C1C4183A5CB71B4B90E8A2E2E54A /* KFXSesameView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4010DA5AC0559F3F9F16735F49E432D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EEF35892FA9E39DD42A841F671511DA /* Pods-KFXSesameView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F35FC9CD531CC4281F008216F92AC823 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KFXSesameView;
+			target = 7F972C1F62BF2D0026E8996CDBE3E32F /* KFXSesameView */;
+			targetProxy = 78AB2FAE51022D56245A306AE18426E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		226AA61C8468C8999A828832A78D4D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8819766C2D14AB01F491BDACA806531 /* KFXSesameView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KFXSesameView/KFXSesameView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KFXSesameView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KFXSesameView/KFXSesameView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KFXSesameView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CB2726A4C135BECCC00D2DBC15F694C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2BBDA21B9821E12C78508A76E3178DE /* Pods-KFXSesameView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KFXSesameView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KFXSesameView_Tests/Pods-KFXSesameView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KFXSesameView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77D76BEC0F33EB12CF6CF36003D47A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7C8B2ECE51B7069ECC25D971A46FB1 /* Pods-KFXSesameView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KFXSesameView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KFXSesameView_Tests/Pods-KFXSesameView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KFXSesameView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		82DFF5DE20F7FEA7932AFAC9C0A5B06C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8819766C2D14AB01F491BDACA806531 /* KFXSesameView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KFXSesameView/KFXSesameView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KFXSesameView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KFXSesameView/KFXSesameView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KFXSesameView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8EB42F6399072E08BA99788CFBCEC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB27A3F29BF4E6360347B8F35DC7681 /* Pods-KFXSesameView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KFXSesameView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KFXSesameView_Example/Pods-KFXSesameView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KFXSesameView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F3F315C0374812C1DF39E7B7EA1110FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A910723A23839C6AC817ABC87A527F /* Pods-KFXSesameView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KFXSesameView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KFXSesameView_Example/Pods-KFXSesameView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KFXSesameView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		644196C0E52E724B2189D8AF00B4B35F /* Build configuration list for PBXNativeTarget "Pods-KFXSesameView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F315C0374812C1DF39E7B7EA1110FE /* Debug */,
+				C8EB42F6399072E08BA99788CFBCEC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E9723D8F8008DF8B9AB2D1CE4B41FDA /* Build configuration list for PBXNativeTarget "KFXSesameView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226AA61C8468C8999A828832A78D4D6A /* Debug */,
+				82DFF5DE20F7FEA7932AFAC9C0A5B06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C97BBD338B6017917E92A02CC4368EA /* Build configuration list for PBXNativeTarget "Pods-KFXSesameView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D76BEC0F33EB12CF6CF36003D47A1B /* Debug */,
+				3CB2726A4C135BECCC00D2DBC15F694C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
