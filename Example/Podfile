@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KFXSesameView_Example' do
+  pod 'KFXSesameView', :path => '../'
+
+  target 'KFXSesameView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
