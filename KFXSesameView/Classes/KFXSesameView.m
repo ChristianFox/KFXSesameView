@@ -1,10 +1,5 @@
-//
-//  KFXSesameView.m
-//  Pods
-//
-//  Created by Leu on 22/09/2016.
-//
-//
+
+
 
 #import "KFXSesameView.h"
 
@@ -13,16 +8,9 @@ NSString *const kKFXSesameViewCellColumnIndexKEY = @"columnIndex";
 NSString *const kKFXSesameViewCellTapsRequiredKEY = @"tapsRequired";
 NSString *const kKFXSesameViewCellSequencePositionKEY = @"sequencePosition";
 NSString *const kKFXSesameViewCellIdentifierKEY = @"identifier";
-
-
-typedef NS_ENUM(NSInteger, KFXSesameViewErrorCode){
-    KFXSesameViewErrorCodeUndefined = 0,
-    KFXSesameViewErrorCodeRowIndexGreaterNumberOfRows,
-    KFXSesameViewErrorCodeColumnIndexGreaterNumberOfColumns,
-    KFXSesameViewErrorCodeTapsRequiredTooLow
-};
-
 NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
+
+
 
 @interface KFXSesameView () <UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -34,6 +22,14 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
 
 @end
 
+
+
+
+
+
+
+
+
 @implementation KFXSesameView
 
 //======================================================
@@ -42,16 +38,29 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
 //--------------------------------------------------------
 #pragma mark -
 //--------------------------------------------------------
--(BOOL)configureCellAtColumn:(NSUInteger)columnIdx
-                         row:(NSUInteger)rowIdx
-                tapsRequired:(NSUInteger)tapsRequired
-                       identifier:(NSString*_Nullable)identifier
-                       error:(NSError * _Nullable __autoreleasing *)error{
+-(BOOL)addCellToSequenceAtColumn:(NSUInteger)columnIdx
+                             row:(NSUInteger)rowIdx
+                    tapsRequired:(NSUInteger)tapsRequired
+                      identifier:(NSString*_Nullable)identifier
+                           error:(NSError * _Nullable __autoreleasing *)error{
     
     NSError *localError;
     
     // ## Defensive ##
-    if (rowIdx+1 > self.numberOfRows) {
+    if (self.numberOfRows == 0) {
+        
+        localError = [NSError errorWithDomain:kKFXSesameViewErrorDomain
+                                         code:KFXSesameViewErrorCodeNumberRowsIsZero
+                                     userInfo:@{NSLocalizedDescriptionKey:@"SesameView has 0 rows. You need to set the number of rows and columns before adding a cell to the sequence"}];
+        
+    }else if (self.numberOfColumns == 0){
+        
+        localError = [NSError errorWithDomain:kKFXSesameViewErrorDomain
+                                         code:KFXSesameViewErrorCodeNumberColumnsIsZero
+                                     userInfo:@{NSLocalizedDescriptionKey:@"SesameView has 0 columns. You need to set the number of rows and columns before adding a cell to the sequence"}];
+        
+        
+    }else if (rowIdx+1 > self.numberOfRows) {
         
         localError = [NSError errorWithDomain:kKFXSesameViewErrorDomain
                                          code:KFXSesameViewErrorCodeRowIndexGreaterNumberOfRows
@@ -62,13 +71,13 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
         localError = [NSError errorWithDomain:kKFXSesameViewErrorDomain
                                          code:KFXSesameViewErrorCodeColumnIndexGreaterNumberOfColumns
                                      userInfo:@{NSLocalizedDescriptionKey:[NSString stringWithFormat:@"The given columnIdx '%lu' is higher than the numberOfColumss '%ld'",(unsigned long)columnIdx,(unsigned long)self.numberOfColumns]}];
-
+        
     }else if (tapsRequired == 0){
         
         localError = [NSError errorWithDomain:kKFXSesameViewErrorDomain
                                          code:KFXSesameViewErrorCodeTapsRequiredTooLow
                                      userInfo:@{NSLocalizedDescriptionKey:[NSString stringWithFormat:@"You have specified 0 taps required, you must specify a positive integer"]}];
-
+        
     }
     
     
@@ -83,11 +92,11 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
     // ## ** Passed Defenses ** ##
     // Make Cell Dictionary
     NSMutableDictionary *cellDict = [@{
-                           kKFXSesameViewCellRowIndexKEY:@(rowIdx),
-                           kKFXSesameViewCellColumnIndexKEY:@(columnIdx),
-                           kKFXSesameViewCellTapsRequiredKEY:@(tapsRequired),
-                           kKFXSesameViewCellSequencePositionKEY:@(self.cells.count),
-                           } mutableCopy];
+                                       kKFXSesameViewCellRowIndexKEY:@(rowIdx),
+                                       kKFXSesameViewCellColumnIndexKEY:@(columnIdx),
+                                       kKFXSesameViewCellTapsRequiredKEY:@(tapsRequired),
+                                       kKFXSesameViewCellSequencePositionKEY:@(self.cells.count),
+                                       } mutableCopy];
     if (identifier != nil) {
         [cellDict setObject:identifier forKey:kKFXSesameViewCellIdentifierKEY];
     }
@@ -163,7 +172,7 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
         cell.backgroundColor = [UIColor clearColor];
     }
     
-
+    
     NSString *cellKey = [self cellKeyWithColumnIndex:indexPath.section rowIndex:indexPath.row];
     NSDictionary *cellDict = self.cells[cellKey];
     
@@ -187,32 +196,9 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
         }
     }
     
-//    NSLog(@"Column: %ld, Row: %ld",(long)indexPath.section,(long)indexPath.row);
-    
     return cell;
 }
 
-//-(void)addGesturesToCell:(UICollectionViewCell*)cell atIndexPath:(NSIndexPath*)indexPath{
-//    
-//    NSArray *cellKeys = [self cellKeysWithColumnIndex:indexPath.section rowIndex:indexPath.row];
-//    for (NSString *cellKey in cellKeys) {
-//        
-//        NSDictionary *cellDict = self.cells[cellKey];
-//        if (cellDict == nil) {
-//            // If cell is not a lockable cell then incase it has been reused from a lockable cell we want to make sure the gesture recogniser/s are not hanging around
-//            for (UIGestureRecognizer *oldGesture in cell.gestureRecognizers) {
-//                [cell removeGestureRecognizer:oldGesture];
-//            }
-//            
-//        }else{
-//            
-//            
-//            
-//        }
-//        
-//    }
-//    
-//}
 
 //--------------------------------------------------------
 #pragma mark - UICollectionViewDelegate
@@ -259,7 +245,7 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
     self.lockCellsAfterSequenceCompletion = YES;
     [self configureCollectonView];
     self.backgroundColor = [UIColor clearColor];
-
+    
 }
 
 //--------------------------------------------------------
@@ -290,7 +276,7 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
 
 
 -(void)timerDidFire:(NSTimer*)timer{
- 
+    
     [timer invalidate];
     self.timer = nil;
     if ([self.delegate respondsToSelector:@selector(sesameViewTimeDidExpireBeforeSequenceUnlockComplete:)]) {
@@ -305,10 +291,10 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
 //--------------------------------------------------------
 -(void)didRecogniseTapGesture:(UITapGestureRecognizer*)recogniser{
     /*
-    // Use the recogniser to find the corresponding cellKey and then get the cellDict
-    // Then inform delegate of cell unlock
-    // If first in sequence then set timer
-    // If last in sequence then end timer and inform delegate
+     // Use the recogniser to find the corresponding cellKey and then get the cellDict
+     // Then inform delegate of cell unlock
+     // If first in sequence then set timer
+     // If last in sequence then end timer and inform delegate
      */
     
     for (NSString *cellKey in self.unlockGestures) {
@@ -319,8 +305,7 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
             NSMutableDictionary *cellDict = self.cells[cellKey];
             NSUInteger sequencePosition = [cellDict[kKFXSesameViewCellSequencePositionKEY] unsignedIntegerValue];
             
-            // Has the previous cell in the sequence been unlocked. If not then do not unlock this cell
-            // If first cell in sequence then it can be unlocked
+            // Has the previous cell in the sequence been unlocked. If not then we don't want to unlock the cell out of order so return
             if (sequencePosition != 0) {
                 BOOL previousIsLocked = [self.locks[sequencePosition-1]boolValue];
                 if (previousIsLocked) {
@@ -332,17 +317,16 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
             self.locks[sequencePosition] = @NO;
             
             if (sequencePosition == 0) {
-                if ([self.delegate respondsToSelector:@selector(sesameView:didUnlockFirstCellInSequence:)]) {
-                    [self.delegate sesameView:self didUnlockFirstCellInSequence:[cellDict copy]];
-                }
+                
+                // If it is the first cell in the sequence then we must set a timer if one has not been set already
                 [self.timer invalidate];
-                if (self.timeLimit > 1.0) {
+                if (self.timeLimit > 0.01) {
                     self.timer = [NSTimer scheduledTimerWithTimeInterval:self.timeLimit
                                                                   target:self
                                                                 selector:@selector(timerDidFire:)
                                                                 userInfo:nil
                                                                  repeats:NO];
-
+                    
                 }
                 
             }
@@ -372,60 +356,7 @@ NSString *const kKFXSesameViewErrorDomain = @"com.kfxtech.sesameview";
     
     NSString *cellKey = [NSString stringWithFormat:@"Cell-%ld-%ld",(long)columnIdx,(long)rowIdx];
     return cellKey;
-//    NSString *baseKey = [NSString stringWithFormat:@"Cell-%ld-%ld",(long)columnIdx,(long)rowIdx];
-//    
-//    // So that we can add a cell to the sequence multiple times with different gestures we need to add an index to the key to represent its place in the cell's sequence
-//    NSUInteger cellSeqIdx = 0;
-//    NSString *keyForCellSeq = [baseKey stringByAppendingFormat:@"-%lu",(unsigned long)cellSeqIdx];
-//    while (self.cells[keyForCellSeq] != nil) {
-//        cellSeqIdx++;
-//        NSString *key2 = [baseKey stringByAppendingFormat:@"-%lu",(unsigned long)cellSeqIdx];
-//        if (self.cells[key2] == nil) {
-//            break;
-//        }else{
-//            keyForCellSeq = key2;
-//        }
-//    }
-//    
-//    NSString *finalKey = keyForCellSeq;
-//    NSLog(@"Final Key:%@:",finalKey);
-//    return finalKey;
 }
-//
-//-(NSString*)generateCellKeyWithColumnIndex:(NSUInteger)columnIdx rowIndex:(NSUInteger)rowIdx{
-//    
-//    NSString *baseKey = [NSString stringWithFormat:@"Cell-%ld-%ld",(long)columnIdx,(long)rowIdx];
-//    
-//    // So that we can add a cell to the sequence multiple times with different gestures we need to add an index to the key to represent its place in the cell's sequence
-//    NSUInteger cellSeqIdx = 0;
-//    NSString *keyForCellSeq = [baseKey stringByAppendingFormat:@"-%lu",(unsigned long)cellSeqIdx];
-//    while (self.cells[keyForCellSeq] != nil) {
-//        cellSeqIdx++;
-//        keyForCellSeq = [baseKey stringByAppendingFormat:@"-%lu",(unsigned long)cellSeqIdx];
-//    }
-//    
-//    NSString *finalKey = keyForCellSeq;
-//    NSLog(@"Final Key:%@:",finalKey);
-//    return finalKey;
-//}
-//
-//
-//-(NSArray<NSString*>*)cellKeysWithColumnIndex:(NSUInteger)columnIdx rowIndex:(NSUInteger)rowIdx{
-//
-//    NSString *baseKey = [NSString stringWithFormat:@"Cell-%ld-%ld",(long)columnIdx,(long)rowIdx];
-//    
-//    // So that we can add a cell to the sequence multiple times with different gestures we need to add an index to the key to represent its place in the cell's sequence
-//    NSUInteger cellSeqIdx = 0;
-//    NSString *keyForCellSeq = [baseKey stringByAppendingFormat:@"-%lu",(unsigned long)cellSeqIdx];
-//    NSMutableArray *mutArray = [NSMutableArray arrayWithCapacity:1];
-//    while (self.cells[keyForCellSeq] != nil) {
-//        cellSeqIdx++;
-//        [mutArray addObject:keyForCellSeq];
-//    }
-//
-//    return [mutArray copy];
-//}
-
 
 
 -(UIColor*)randomColourWithRandomAlpha:(BOOL)useRandomAlpha alpha:(CGFloat)alpha{
