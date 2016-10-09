@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KFXSesameView'
-  s.version          = '0.5.0'
+  s.version          = '0.6.0'
   s.summary          = 'KFXSesameView - hidden keypad for unlocking hidden doors.'
 
   s.description      = <<-DESC

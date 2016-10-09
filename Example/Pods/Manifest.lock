@@ -1,5 +1,5 @@
 PODS:
-  - KFXSesameView (0.2.3)
+  - KFXSesameView (0.6.0)
 
 DEPENDENCIES:
   - KFXSesameView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  KFXSesameView: abc2383a792a21e7f3cb2c82905d62ee5c7bf1a8
+  KFXSesameView: 9389dd701b0f3ef0499375f7dc264d0b13108f22
 
 PODFILE CHECKSUM: 8306afb9d808c88cf1064172ff5e7b9cc04c50b6
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.rc.2
