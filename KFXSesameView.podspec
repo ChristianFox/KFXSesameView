@@ -8,35 +8,22 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KFXSesameView'
-  s.version          = '0.2.3'
+  s.version          = '0.5.0'
   s.summary          = 'KFXSesameView - hidden keypad for unlocking hidden doors.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-UIView subclass. configure with number of cells and number of taps required on each cell.
+Open Sesame!
+
+The basic idea is to have a hidden keypad in your app that can be used to unlock a secret part area for example a debug mode or an easter egg. Provides a single class: KFXSesameView which contains a UICollectionView. The collection view is used to layout a grid of cells and each cell can be added to a sequence of taps. Tap all in the seqence within a time limit and get a delegate callback. Then you can present a new view controller or do whatever you want.
                        DESC
 
   s.homepage         = 'https://kfxtech@bitbucket.org/kfxteam/kfxsesameview.git'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Christian Fox' => 'christianfox890@icloud.com' }
   s.source           = { :git => 'https://kfxtech@bitbucket.org/kfxteam/kfxsesameview.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'KFXSesameView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'KFXSesameView' => ['KFXSesameView/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
