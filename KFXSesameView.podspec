@@ -17,10 +17,10 @@ Open Sesame!
 The basic idea is to have a hidden keypad in your app that can be used to unlock a secret part area for example a debug mode or an easter egg. Provides a single class: KFXSesameView which contains a UICollectionView. The collection view is used to layout a grid of cells and each cell can be added to a sequence of taps. Tap all in the seqence within a time limit and get a delegate callback. Then you can present a new view controller or do whatever you want.
                        DESC
 
-  s.homepage         = 'https://kfxtech@bitbucket.org/kfxteam/kfxsesameview.git'
+  s.homepage         = 'https://github.com/ChristianFox/KFXSesameView.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Christian Fox' => 'christianfox890@icloud.com' }
-  s.source           = { :git => 'https://kfxtech@bitbucket.org/kfxteam/kfxsesameview.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ChristianFox/KFXSesameView.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
