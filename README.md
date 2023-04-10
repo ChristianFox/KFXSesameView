@@ -1,8 +1,17 @@
-# KFXSesameView
+[![Latest Version](https://img.shields.io/github/v/tag/ChristianFox/KFXSesameView?sort=semver&label=Version&color=orange)](https://github.com/ChristianFox/KFXSesameView/)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS-orange)](https://img.shields.io/badge/Platforms-iOS-orange)
+[![Cocoapods](https://img.shields.io/badge/Cocoapods-yes-green)](https://img.shields.io/badge/Cocoapods-yes-green)
+[![Cathage](https://img.shields.io/badge/Cathage-no-red)](https://img.shields.io/badge/Cathage-no-red)
+[![Manually](https://img.shields.io/badge/Manual_Import-yes-green)](https://img.shields.io/badge/Manual_Import-yes-green)
+[![License](https://img.shields.io/badge/license-mit-blue.svg)](https://github.com/ChristianFox/KFXSesameView/blob/master/LICENSE)
+[![Contribution](https://img.shields.io/badge/Contributions-Welcome-blue)](https://github.com/ChristianFox/KFXSesameView/labels/contribute)
+[![First Timers Friendly](https://img.shields.io/badge/First_Timers-Welcome-blue)](https://github.com/ChristianFox/KFXSesameView/labels/contribute)
+[![Size](https://img.shields.io/github/repo-size/ChristianFox/KFXSesameView?color=orange)](https://img.shields.io/github/repo-size/ChristianFox/KFXSesameView?color=orange)
+[![Files](https://img.shields.io/github/directory-file-count/ChristianFox/KFXSesameView?color=orange)](https://img.shields.io/github/directory-file-count/ChristianFox/KFXSesameView?color=orange)
 
-[![Version](https://img.shields.io/cocoapods/v/KFXSesameView.svg?style=flat)](http://cocoapods.org/pods/KFXSesameView)
-[![License](https://img.shields.io/cocoapods/l/KFXSesameView.svg?style=flat)](http://cocoapods.org/pods/KFXSesameView)
-[![Platform](https://img.shields.io/cocoapods/p/KFXSesameView.svg?style=flat)](http://cocoapods.org/pods/KFXSesameView)
+# WARNING - This project has not been updated in a while and will be deprecated at some point in the future
+
+# KFXSesameView
 
 ## Example
 
