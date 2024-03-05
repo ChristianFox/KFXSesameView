@@ -9,7 +9,7 @@
 [![Size](https://img.shields.io/github/repo-size/ChristianFox/KFXSesameView?color=orange)](https://img.shields.io/github/repo-size/ChristianFox/KFXSesameView?color=orange)
 [![Files](https://img.shields.io/github/directory-file-count/ChristianFox/KFXSesameView?color=orange)](https://img.shields.io/github/directory-file-count/ChristianFox/KFXSesameView?color=orange)
 
-# WARNING - This project has not been updated in a while and will be deprecated at some point in the future
+# WARNING - This project has not been updated in a while and may be deprecated at some point in the future
 
 # KFXSesameView
 
@@ -122,3 +122,5 @@ Christian Fox, christianfox890@icloud.com
 ## License
 
 KFXSesameView is available under the MIT license. See the LICENSE file for more info.
+
+<a href="https://www.buymeacoffee.com/chrisfox" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
